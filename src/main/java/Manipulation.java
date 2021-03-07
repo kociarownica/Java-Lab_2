@@ -8,16 +8,11 @@ public class Manipulation {
         this.str = str;
     }
 
-    public void High () { System.out.println(str.toUpperCase()); }
+    public String High () { return str.toUpperCase(); }
 
-    public void Low () { System.out.println(str.toLowerCase()); }
+    public String Low () { return str.toLowerCase(); }
 
-    public void Length() { System.out.printf("Length of the string - %d\n", str.length()); }
+    public int Length() { return str.length(); }
 
-    public void Connect() {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Input another string: ");
-        String str1 = in.nextLine();
-        System.out.printf(str + " " + str1 + "\n") ;
-    }
+    public String Connect(String str1) { return (str + " " + str1) ; }
 }
