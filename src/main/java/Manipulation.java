@@ -2,17 +2,11 @@ import java.util.Scanner;
 
 public class Manipulation {
 
-    String str;
+    public String High (String str) { return str.toUpperCase(); }
 
-    Manipulation(String str){
-        this.str = str;
-    }
+    public String Low (String str) { return str.toLowerCase(); }
 
-    public String High () { return str.toUpperCase(); }
+    public int Length(String str) { return str.length(); }
 
-    public String Low () { return str.toLowerCase(); }
-
-    public int Length() { return str.length(); }
-
-    public String Connect(String str1) { return (str + " " + str1) ; }
+    public String Connect(String str, String str1) { return (str + " " + str1) ; }
 }
